@@ -1,8 +1,18 @@
-import React from 'react'
+import React from "react";
 
 // function Greet(){
 //     return <h1>Hello Yug</h1>
 // }
 
-export const Greet=()=><h1>Hello yug</h1>
-// export default Greet;
+//destructing const Greet = (props) => { to const Greet = ({name,heroName}) => {
+
+const Greet = ({name, heroName}) => {
+  console.log(name);
+  return (
+    <div>
+      <h1>Hello {name}</h1>
+      <h1>Lol{heroName}</h1>
+    </div>
+  );
+};
+export default Greet;
