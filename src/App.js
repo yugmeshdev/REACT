@@ -25,6 +25,16 @@ import RefsDemo from "./components/RefsDemo";
 import Input from "./components/Input";
 import FocusInput from "./components/FocusInput";
 import FRInput from "./components/FRInput";
+import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErroBoundary from "./components/ErroBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter2 from "./components/Counter2";
 
 function App() {
   return (
@@ -64,7 +74,36 @@ function App() {
       {/* <RefsDemo /> */}
       {/* <Input /> */}
       {/* <FocusInput /> */}
-      <FRInput />
+      {/* <FRParentInput /> */}
+      {/* <PortalDemo /> */}
+      {/* <ErroBoundary>
+        <Hero heroName="Batman" />
+      </ErroBoundary>
+      <ErroBoundary>
+        {" "}
+        <Hero heroName="Joker" />
+      </ErroBoundary> */}
+      {/* <ClickCounter name="yugmeshson" />
+      <HoverCounter /> */}
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Yugmesh" : "Guest")} /> */}
+      <Counter2
+        render={(count, clickHandler) => (
+          <ClickCounterTwo
+            count={count}
+            clickHandler={clickHandler}
+          ></ClickCounterTwo>
+        )}
+      />
+      <Counter2
+        render={(count, clickHandler) => (
+          <HoverCounterTwo
+            count={count}
+            clickHandler={clickHandler}
+          ></HoverCounterTwo>
+        )}
+      />
     </div>
   );
 }
