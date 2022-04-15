@@ -35,6 +35,8 @@ import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
 import Counter2 from "./components/Counter2";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
 
 function App() {
   return (
@@ -88,7 +90,7 @@ function App() {
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={(isLoggedIn) => (isLoggedIn ? "Yugmesh" : "Guest")} /> */}
-      <Counter2
+      {/* <Counter2
         render={(count, clickHandler) => (
           <ClickCounterTwo
             count={count}
@@ -103,7 +105,11 @@ function App() {
             clickHandler={clickHandler}
           ></HoverCounterTwo>
         )}
-      />
+      /> */}
+
+      <UserProvider value="Yugmesh">
+        <ComponentC />
+      </UserProvider>
     </div>
   );
 }
