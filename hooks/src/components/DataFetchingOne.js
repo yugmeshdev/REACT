@@ -8,7 +8,7 @@ function DataFetchingOne() {
 
   useEffect(() => {
     axios
-      .get(`https://jsonplaceholder.typicode.com/posts/1`)
+      .get(`https://jsonplaceholder.typicode.com/posts/3`)
       .then((response) => {
         setLoading(false);
         setPost(response.data);

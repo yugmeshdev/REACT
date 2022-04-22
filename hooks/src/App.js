@@ -22,6 +22,16 @@ import CounterThree from "./components/CounterThree";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import DataFetchingOne from "./components/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingTwo";
+import ParentComponent from "./components/ParentComponent";
+import Counter from "./components/Counter";
+import FocusInput from "./components/FocusInput";
+import ClassTimer from "./components/ClassTimer";
+import HookTimer from "./components/HookTimer";
+import DocTitleOne from "./components/DocTitleOne";
+import DocTitleTwo from "./components/DocTitleTwo";
+import CustomCounterOne from "./components/CustomCounterOne";
+import UserForm from "./components/UserForm";
 
 export const UserContext = React.createContext();
 export const channelContext = React.createContext();
@@ -71,7 +81,17 @@ function App() {
         <ComponentA />
         <ComponentB />
         <ComponentC /> */}
-        <DataFetchingOne />
+        {/* <DataFetchingOne /> */}
+        {/* <DataFetchingTwo /> */}
+        {/* <ParentComponent /> */}
+        {/* <Counter /> */}
+        {/* <FocusInput /> */}
+        {/* <ClassTimer /> */}
+        {/* <HookTimer /> */}
+        {/* <DocTitleOne /> */}
+        {/* <DocTitleTwo /> */}
+        {/* <CustomCounterOne /> */}
+        <UserForm />
       </div>
     </CountContext.Provider>
   );
